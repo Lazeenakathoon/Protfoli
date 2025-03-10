@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/Lazina.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Protfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Lazina</span><br>Kahtoon From India</h1>
+        </div>
+     </div>
+     </div>
+    <!--------------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/try.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Lazina Kahtoon, a passionate web designer and developer with a knack for creating beautiful
+                         and functional websites. I have a strong background in frontend development an
+                         n eye for design. My goal is to bring your ideas to life through innovative and 
+                         user-friendly web solutions.</p>
+
+                         <div class="tab-titles">
+                                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                                <p  class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p  class= "tab-links" onclick="opentab('education')">Education</p>
+                             </div>
+                             <div class="tab-contents" id="skills">
+                                <ul>
+                                    <li><span>Frontend Developer</span><br>website frontend </li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building frontend</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li>Frontend Developer at XYZ Company</li>
+                                    <li>Web Designer at ABC Agency</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="education">
+                                <ul>
+                                    <li>Bachelor's in Computer Science</li>
+                                    <li>Diploma in Web Development</li>
+                                </ul>
+                             </div>
+                            </div>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script> <!-----------------services----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>1. **"Designing dreams, one pixel at a time."**  
+                    2. **"Crafting user-friendly experiences that inspire and engage."**  </p>
+                    <lern href="#">Lern more</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Frontend Design</h2>
+                <p>1. **"Designing dreams, one pixel at a time."**  
+                    2. **"Crafting user-friendly experiences that inspire and engage."**  </p>
+                    <a href="#">Lern more</a>
+               </div> 
+               <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Website Design</h2>
+                <p>1. **"Designing dreams, one pixel at a time."**  
+                    2. **"Crafting user-friendly experiences that inspire and engage."**  </p>
+                    <a href="#">Lern more</a>
+               </div> 
+            </div> 
+        </div>
+    </div>
+<!-----------------------protfolio-------------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.png" alt="iCoder Website">
+                <div class="layer">
+                    <h3>iCoder Website</h3>
+                    <p>Coding documentation website for the beginners.
+                         It is a free website for the beginners to learn coding.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-2.png" alt="Tic tac toe Game">
+                <div class="layer">
+                    <h3>Tic tac toe Game</h3>
+                    <p>A simple game I built myself to check my JavaScript concepts.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-3.png" alt="Clone of YouTube">
+                <div class="layer">
+                    <h3>Clone of YouTube</h3>
+                    <p>I made this to practice my ReactJS concepts.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------------contact------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="image/Blue Light Blue Color Blocks Flight Attendant CV.pdf"   download    class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>you can contact me <i class="fa-solid fa-heart"></i> i will make the website.</p>
+    </div>
+</div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+ </script> 
+ 
+ <script>
+    
+     var sidemenu = document.getElementById("sidemenu");
+
+     function  openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function  closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+
+ </script>
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyJroVw2zDnlMfqdk2ffYkhEXFlAU8gbpktWbG_PQvN5QIIskSdZhCswZHnPHFulO0L/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+          
+</body>
+</html>
